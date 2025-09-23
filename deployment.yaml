@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: hello-app
+  template:
+    metadata:
+      labels:
+        app: hello-app
+    spec:
+      containers:
+      - name: hello-app
+        # IMPORTANTE: Use seu usuário do Docker Hub aqui.
+        # Esta imagem será atualizada pelo GitHub Actions depois.
+        image: laissansara/hello-app:initial
+        ports:
+        - containerPort: 8000
