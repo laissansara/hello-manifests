@@ -16,6 +16,6 @@ spec:
       - name: hello-app
         # IMPORTANTE: Use seu usuário do Docker Hub aqui.
         # Esta imagem será atualizada pelo GitHub Actions depois.
-        image: laissansara/hello-app:802cd1e6bee56367e90a04380c9ebdc8e542a933
+        image: laissansara/hello-app:578ac1b27f45e119480f051081329ab00c5e4f75
         ports:
         - containerPort: 8000
